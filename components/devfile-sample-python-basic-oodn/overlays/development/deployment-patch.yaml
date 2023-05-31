@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-oodn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/mfaisal2-tenant/devfile-sample-python-basic/devfile-sample-python-basic-oodn@sha256:f010778a135a1043cb8511be96f1f27749a7857fcdabde4556b848163bb6adfb
+        name: my-python
+        resources: {}
+status: {}
